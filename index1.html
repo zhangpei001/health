@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>首页</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="css/index1.css" />
 </head>
@@ -23,13 +24,144 @@
 
 <!-- nav部分开始 -->
     <nav>
-        <span> <p>课程</p> <p>精选</p> <p>好友圈</p></span>  
+        <span> <p class="first">课程</p> <p>精选</p> <p>好友圈</p></span>  
     </nav>
 
 <!-- banner部分开始-->
 
     <div class="banner">
-        
+        <div class="pic">
+            <!-- <img src="img/pic1.jpg" alt=""/> -->
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                       <div class="swiper-slide"><img src="img/pic1.jpg"></div>
+                       <div class="swiper-slide"><img src="img/pic2.jpg"></div>
+                       <div class="swiper-slide"><img src="img/pic3.jpg"></div>
+                       <div class="swiper-slide"><img src="img/pic4.jpg"></div>
+                       <div class="swiper-slide"><img src="img/pic5.jpg"></div>
+                       <div class="swiper-slide"><img src="img/pic6.jpg"></div>
+                 </div>
+             <!-- Add Pagination -->
+                     <div class="swiper-pagination" style="bottom:-17px;"></div>
+             </div>
+         
+        </div>
+     </div>
+<!-- section部分开始 -->
+    <section>
+            <div class="menu">
+                    <a href="#"><img src="img/logo1.png"/><span>减肥知识</span></a>
+                    <a href="#"><img src="img/logo2.png"/><span>成功故事</span></a>
+                    <a href="#"><img src="img/logo3.png"/><span>减重服务</span></a>
+                    <a href="#"><img src="img/logo4.png"/><span>减肥测试</span></a>
+            </div>
+    </section>
+
+<!-- 内容部分 -->
+    <div class="connet">
+            <div class="title">
+                    <h3>每日一课</h3>
+                    <a href="javascript:;" class="del">更多></a>
+                </div>
+                <div class="one">
+                    <a href="javascript:;" class="imgA"><img src="img/photo1.png"/></a>
+                    <div class="one_con">
+                        <div class="info">
+                            <h3>各类减肥小工具有用吗？</h3>
+                            <p><span>瘦腿袜，瘦身霜，瘦身仪到底靠谱吗？</span></p> 
+                            <p><span>2690人正在学习</span></p>                           
+                        </div>
+                    </div>
+            </div>
+
+            <div class="title">
+                    <h3>减肥瘦身</h3>
+                    <a href="javascript:;" class="del">查看全部></a>
+                </div>
+                <div class="one">
+                    <a href="javascript:;" class="imgA"><img src="img/photo2.jpg"/></a>
+                    <div class="one_con">
+                        <div class="info">
+                            <h3>减肥必学的基础课</h3>
+                            <p><span>最科学的减肥知识，入门必学</span></p> 
+                            <p><span>27.8万人正在学习</span></p>                           
+                        </div>
+                    </div>
+            </div>
+
+            <div class="title">
+                    <h3>健身塑形</h3>
+                    <a href="javascript:;" class="del">查看全部></a>
+                </div>
+                <div class="one">
+                    <a href="javascript:;" class="imgA"><img src="img/photo3.jpg"/></a>
+                    <div class="one_con">
+                        <div class="info">
+                            <h3>28天马甲线速成</h3>
+                            <p><span>轻松跟我练，28天解锁马甲线</span></p> 
+                            <p><span>6万人正在学习</span></p>                           
+                        </div>
+                    </div>
+            </div>
+
+            <div class="title">
+                    <h3>女性健康</h3>
+                    <a href="javascript:;" class="del">查看全部></a>
+                </div>
+                <div class="one">
+                    <a href="javascript:;" class="imgA"><img src="img/photo4.jpg"/></a>
+                    <div class="one_con">
+                        <div class="info">
+                            <h3>姨妈期六大迷思</h3>
+                            <p><span>不能洗头？腰酸背痛？</span></p> 
+                            <p><span>4万人正在学习</span></p>                           
+                        </div>
+                    </div>
+            </div>
+
+            <div class="title">
+                    <h3>美容美体</h3>
+                    <a href="javascript:;" class="del">查看全部></a>
+                </div>
+                <div class="one">
+                    <a href="javascript:;" class="imgA"><img src="img/photo5.jpg"/></a>
+                    <div class="one_con">
+                        <div class="info">
+                            <h3>防晒基础必学课</h3>
+                            <p><span>不做好防晒，晒黑又晒老</span></p> 
+                            <p><span>2864人正在学习</span></p>                           
+                        </div>
+                    </div>
+            </div>
     </div>
+
+<!-- footer部分开始 -->
+<footer>
+		<a href="javascript:;"><i class="iconfont icon-yezi"></i><span class="shouye">首页</span></a>
+        <a href="javascript:;"><i class="iconfont icon-jilu"></i><span>记录</span></a>
+        <a href="javascript:;"><i class="iconfont icon-jiahao"></i></a>
+		<a href="javascript:;"><i class="iconfont icon-iconset0330"></i><span>商店</span></a>
+		<a href="javascript:;"><i class="iconfont icon-wo"></i><span>我</span></a>
+	</footer>
 </body>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+ </script>
+
 </html>

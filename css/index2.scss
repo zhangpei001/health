@@ -12,7 +12,8 @@ html,body{
 }
 body{
 	font-family:"微软雅黑",Arial;
-	background:#ffffff;
+    background:#f8f8f8;
+    display: -webkit-flex;
     flex-direction: column;
 }
 a{
@@ -32,7 +33,7 @@ header{
     height:0.35rem;
     display: -webkit-flex;
     position:relative;
-    // background:#5b502c;
+    //background:#5b502c;
 }
 header .top{
     padding:0.08rem 0.2rem;
@@ -80,16 +81,44 @@ banner img{
 }
 
 // section部分
-.section{
+section{
 	width: 100%;
-	-webkit-flex:1;
+	flex:1;
 	overflow-x:hidden;
-	overflow-y: scroll;
+    overflow-y: scroll;   
 }
 
-.i icon-shiwu{
+.icon-shiwu{
     width:0.25rem;
     height:0.25rem;
+    color:orange;
+}
+.icon-tizhong{
+    color:#839aeb;
+}
+.icon-jiankanghaoxiguan{
+    color:#8dc0ee;
+}
+.icon-train-active{
+    color:#f3af63;
+}
+.icon-bushu{
+    color:#76cfc2;
+}
+.icon-_fuzhi-{
+    color:#839aeb;
+}
+.icon-baobaoshuo{
+    color:#efd750;
+}
+.icon-yinshi{
+    color:#ef9369;
+}
+.icon-jilu{
+    color:#e488b8;
+}
+.icon-shuimian{
+    color:#7274b9;
 }
 
 .one{
@@ -115,7 +144,8 @@ banner img{
 	border-bottom: 1px solid #f0f0f2;
 }
 .one_con{
-	padding-bottom: 0.07rem;
+    padding-bottom: 0.07rem;
+    color:#3b3333;
 }
 .icon-shiwu{
     padding-right: 0.16rem;
@@ -158,6 +188,11 @@ banner img{
 .connet{
     width: 100%;
     display: -webkit-flex;
+    margin-top:0.1rem;
+    flex-direction: column;
+}
+.connet h3{
+    color:#3b3333;
 }
 .exercise{
     padding-left:0.3rem;
@@ -168,10 +203,11 @@ banner img{
     display: -webkit-flex;
     -webkit-flex:1;
     -webkit-justify-content: space-between;
-	border-bottom: 1px solid #f0f0f2;
+    border-bottom:1px solid #dfdfdf;
+    margin-top: 0.2rem;
 }
 .exercise h3{
-	margin-top: 0;
+	margin-top:0;
 	margin-bottom: 0;
 	line-height: 0.35rem;
 	font-weight:600;
@@ -192,4 +228,44 @@ banner img{
     display:block;
     padding-top:0.05rem;
     padding-left:0.6rem;
+}
+.exercise i{
+    padding-right: 0.16rem;
+}
+.exercise h3{
+    color:#3b3333;
+}
+/*footer*/
+footer{
+	width: 100%;
+	height: 0.5rem;
+	background: white;
+	display: -webkit-flex;
+	-webkit-align-items:center;
+	border-top: 1px solid #e6e6e6; 
+}
+footer a{
+	-webkit-flex:1;
+	text-align: center;
+	color: #929292;
+	font-size: 0.1rem;
+}
+footer a:hover{
+	color:green;
+}
+footer a .iconfont{
+	display: block;
+	font-size: 0.23rem;
+}
+footer a span{
+	display: block;
+}
+footer .icon-yezi{
+    color:green;
+}
+footer .shouye{
+    color:green;
+}
+footer .icon-jiahao{
+    color:green;
 }

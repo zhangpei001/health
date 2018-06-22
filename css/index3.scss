@@ -31,10 +31,10 @@ img{
 // header部分开始
 header{
     width:100%;
-    height:0.55rem;
+    height:5rem;
     display: -webkit-flex;
     position:relative;
-    margin:0.08rem 0;
+    margin:0.08rem 0 0;
 }
 header .top{
     padding:0.08rem 0.2rem;
@@ -72,12 +72,12 @@ header .icon-03{
 // nav部分开始
 nav{
     width:100%;
-    height:0.5rem;
+    height:3rem;
     display: -webkit-flex;
     justify-content: space-around;
     align-items: center;
     border-bottom:1px solid #dadada;
-    margin:0.08rem 0;
+    margin:0.05rem 0;
 }
 nav p{
     font-size:0.14rem;
@@ -276,7 +276,7 @@ section{
 /*footer*/
 footer{
 	width: 100%;
-	height: 1rem;
+	height:5rem;
 	background: white;
 	display: -webkit-flex;
 	-webkit-align-items:center;
@@ -307,4 +307,3 @@ footer .shouye{
 footer .icon-jiahao{
     color:green;
 }
-
